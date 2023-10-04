@@ -8,8 +8,8 @@ from pathlib import Path
 import numpy as np
 import torch
 import torchvision
-from dataset import get_dataloader, get_dataset_subset
-from fast_train import (
+from basic.dataset import get_dataloader, get_dataset_subset
+from basic.fast_train import (
     NetworkEMA,
     fast_train_fun,
     get_cifar10_data,
@@ -17,11 +17,11 @@ from fast_train import (
     make_net,
     print_training_details,
 )
-from models import get_model
+from basic.models import get_model
 from sklearn.model_selection import train_test_split
 from torch import nn
-from train import inference, train
-from util import get_split, load_models_by_conditions, load_models_by_model_idx
+from basic.train import inference, train
+from basic.util import get_split, load_models_by_conditions, load_models_by_model_idx
 
 from privacy_meter import audit_report
 from privacy_meter.audit import MetricEnum

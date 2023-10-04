@@ -9,7 +9,7 @@ import pandas as pd
 import torch
 import torchvision
 import torchvision.transforms as transforms
-from fast_train import get_batches, get_cifar10_data
+from basic.fast_train import get_batches, get_cifar10_data
 from torch.utils.data import Dataset
 
 

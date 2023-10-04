@@ -3,7 +3,7 @@ import torch
 import torch.nn.functional as F
 import torchvision
 from torch import nn
-from wide_resnet import WideResNet
+from basic.wide_resnet import WideResNet
 
 INPUT_OUTPUT_SHAPE = {
     "cifar10": [3, 10],
